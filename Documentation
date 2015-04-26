@@ -1,13 +1,9 @@
 This document is useful for beginners and not only. Here you will find useful information to expand your knowledge.
 
-* An important rule of PAWN is that public functions must always be forwarded, otherwise you will receive warnings from the compiler. To forward, copy the function's prototype (followed by a semi-colon) and add a 'forward' keyword in front of it.
-* Public functions cannot return strings. Instead, you have to call your own function. 
-* Parameters in functions are locally declared.
+	An important rule of PAWN is that public functions must always be forwarded, otherwise you will receive warnings from the 
+compiler. To forward, copy the function's prototype (followed by a semi-colon) and add a 'forward' keyword in front of it.
+	Public functions cannot return strings. Instead, you have to call your own function. 
+	Parameters in functions are locally declared.
 
-Example of sscanf usage and explanation
 
-sscanf(params, "fffi", x, y, z, interiorid); 
-	*/ params(a.k.a. input) is the string we extract data from;
-	*/ "fffi" tells sscanf about the structure of the input data - i.e. what things we expect it to contain and in what order; the order of the data in the input string is determined by these letters;
-	*/In conclusion, sscanf extracts data from the given string and stores that data in the specified variables; each data is delimited by literally a space button;
-        In our case, the first specifier "f" holds x's  value;
+** Will be updated

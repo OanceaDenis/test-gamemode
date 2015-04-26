@@ -37,7 +37,7 @@ hook OnGameModeInit()
 //	Command_AddAltNamed("pickup", "p");
 //	Command_AddAltNamed("hangup", "h");
 
-    Command_AddAltNamed("whisper", "w");
+	Command_AddAltNamed("whisper", "w");
    	Command_AddAltNamed("shout", "s");
 
 	return 1;

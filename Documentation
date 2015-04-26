@@ -5,7 +5,7 @@ compiler. To forward, copy the function's prototype (followed by a semi-colon) a
 	Public functions cannot return strings. Instead, you have to call your own function. 
 	Parameters in functions are locally declared.
 	As written in one of Slice's tutorials, stop the abuse of stocks. It is barely needed. Stocks should be for internal use 
-and that is only when the function or variable may not be used. Use 'static stock'.
+(includes) and that is only when the function or variable may not be used. Use 'static stock'.
 
 
 ** Will be updated

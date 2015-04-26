@@ -1,32 +1,10 @@
-/*  House system design
-
-I'm looking to create a simple house system.
-
-Server owners and chosen administrators will be able to create, finish, and delete houses at any time using some commands:
-/hcreateexterior - they have to be in front of the house's front door and type that command in order to set the entrance location (for /enter command);
-/teleport - a command that teleports you anywhere (in this case, house interior), provided that the x, y, z coordinates are given;
-/hcreateinterior - after a fitting interior has been chosen, you stand at the exit door and type that command (for /exit command);
-/hcreatefinish - it should teleport you back to the house's porch where a green house pickup should appear (below or above the pickup, the house's price and name should not be missing);
-	params: NAME
-	        PRICE
-/hinfo - use that command in case you want to be guided;
-
-People can only own one house, unless there is a way to allow them to own up to three houses.
-Houses should be enterable if they aren't owned by anyone. That gives our players the possibility to roleplay as estate agents. (More on estate agencies coming soon)
-If they like the interior and have enough money to purchase a certain house, they will have to use the '/buyhouse' command while standing at the porch. The house pickup will turn blue which means the house is owned.
-* Other players can not see the house owners due to roleplay related reasons.
-If they want to sell the house, they will have to use the '/sellhouse' command which basically refunds you with the money you paid for the house, from which a small tax will be deducted.
-I have also thought of other commands, but at the moment, the framework is what matters the most.
-
-
-*/
-
+// to be updated
 #if defined _inc_house
 	#endinput
 #endif
 #define _inc_house
 
-#include 		<YSI\y_hooks>
+#include 	<YSI\y_hooks>
 #include    	<a_mysql>
 
 #define MAX_HOUSES       		(10)
@@ -90,3 +68,4 @@ public OnHouseExteriorCreated()
 	cache_get_row(0, 
 	return 1; 
 }
+

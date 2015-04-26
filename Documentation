@@ -4,7 +4,7 @@ This document is useful for beginners and not only. Here you will find useful in
 * Public functions cannot return strings. Instead, you have to call your own function. 
 * Parameters in functions are locally declared.
 
-Example of sscanf usage and explanation:
+Example of sscanf usage and explanation
 
 sscanf(params, "fffi", x, y, z, interiorid); 
 	*/ params(a.k.a. input) is the string we extract data from;

@@ -211,3 +211,5 @@ public PhoneRinging(playerid) {
 	PlayerPlaySound(playerid, 20600, 0, 0, 0);
 	return 1;
 }
+
+--

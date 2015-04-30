@@ -24,7 +24,7 @@ enum e_PHONEINFO {
         p_Number, 
         p_State,
 };
-
+//When you use static instead of new, the array is visible only in this particular file. It's useful, but you want player info available everywhere
 new stock 
 	p_Info[MAX_PLAYERS][e_PHONEINFO],
 	p_OnPhone[MAX_PLAYERS] = { INVALID_PLAYER_ID, ... }
@@ -37,7 +37,7 @@ hook OnGameModeInit()
 //	Command_AddAltNamed("pickup", "p");
 //	Command_AddAltNamed("hangup", "h");
 
-	Command_AddAltNamed("whisper", "w");
+    Command_AddAltNamed("whisper", "w");
    	Command_AddAltNamed("shout", "s");
 
 	return 1;

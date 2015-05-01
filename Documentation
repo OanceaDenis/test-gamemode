@@ -6,6 +6,10 @@ compiler. To forward, copy the function's prototype (followed by a semi-colon) a
 	Parameters in functions are locally declared.
 	As written in one of Slice's tutorials, stop the abuse of stocks. It is barely needed. Stocks should be for internal use 
 (includes) and that is only when the function or variable may not be used. Use 'static stock'.
+	Strings must end with a null character ('\0', called NUL in ASCII). That tells the compiler where the strings ends, so 
+functions like 'strlen' may be used. Also, a common mistake is to use 'MAX_PLAYER_NAME' instead of 'MAX_PLAYER_NAME +1' - you have
+to give it a one cell space for the null character.
 
 
-** Will be updated
+The list is updated regularly. 
+LAST UPDATED: 5/1/2015
